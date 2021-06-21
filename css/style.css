@@ -39,7 +39,7 @@ a:hover{
     background: transparent;
 } */
 .navbar-brand{
-    font-size: 4rem;
+    font-size: 75px;
     font-family: var(--font1);
     letter-spacing: 3px;
 }
@@ -51,7 +51,7 @@ a:hover{
 }
 .nav li{
     font-family: var(--font1);
-    font-size: 2rem;
+    font-size: 30px;
     list-style: none;
     display: inline-flex;
     justify-content: space-between;
@@ -90,13 +90,13 @@ a:hover{
 
 .img-above-name{
     position: relative;
-    width: 14rem;
-    border-radius: 10rem;
+    width: 250px;
+    border-radius: 100px;
 }
 
 .entry-text{
     margin: 30px;
-    font-size: 5rem;
+    font-size: 80px;
     letter-spacing: 3px;
     font-family: var(--font1);
 }
@@ -104,14 +104,14 @@ a:hover{
 .entry-description{
     color: #fff;
     text-align: center;
-    font-size: 2rem;
+    font-size: 30px;
     font-family: var(--font2);
     margin-top: 25px;
     line-height: 50px;
 }
 
 .student{
-    font-size: 4rem;
+    font-size: 45px;
 }
 
 #about{
@@ -131,7 +131,7 @@ a:hover{
 }
 
 .section-subtitle{
-    font-size: 5rem;
+    font-size: 70px;
     color: rgb(99, 136,173);
     font-family: var(--font1);
     margin-bottom: 5px;
@@ -143,7 +143,65 @@ a:hover{
 
 
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:700px){
+
+    html{
+        height: auto;
+        width: auto;
+    }
+    
+    .nav{
+        width:100%;
+        background: linear-gradient(#ff54a2, #ff575a);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    .nav li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 900px;
+    }
+    .nav li a{
+        color: rgb(255, 249, 249);
+    }
+    .menu-icon{
+        background-color: #222;
+        border-radius: 250px;
+        display: block;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    #entry{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .entry-text{
+        font-size: 49px;
+    }
+
+    .entry-description{
+        font-size: 20px;
+        
+    }
+
+    #about{
+        flex-direction: column;
+    }
+    
+}
+
+
+/* @media only screen and (max-width:500px){
     .nav{
         width:100%;
         background: linear-gradient(#ff54a2, #ff575a);
@@ -164,7 +222,7 @@ a:hover{
     }
     .menu-icon{
         background-color: #222;
-        border-radius: 10rem;
+        border-radius: 250px;
         display: block;
     }
 
@@ -173,8 +231,13 @@ a:hover{
         transition: 0.5s;
     }
 
+    #entry{
+        align-items: center;
+        text-align: center;
+    }
+
     #about{
         flex-direction: column;
     }
-
-}
+    
+} */
