@@ -61,6 +61,8 @@ a:hover{
     color: #8f7a7a;
     height: 130vh;
     background-image: url("/img/portfolio-background-1.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     padding: 280px;
@@ -120,5 +122,5 @@ a:hover{
 
 
 @media only screen and (max-width: 700px){
-    
+
 }
