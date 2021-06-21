@@ -76,7 +76,7 @@ a:hover{
 
 #entry{
     color: #8f7a7a;
-    height: 130vh;
+    height: 150vh;
     background-image: url("/img/portfolio-background-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -174,7 +174,7 @@ a:hover{
     }
 
     #about{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
 }
