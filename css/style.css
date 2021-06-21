@@ -32,29 +32,46 @@ a:hover{
     position: fixed;
     z-index: 3;
 }
-.logo{
+/* .logo{
     height: 0%;
     width: 30%;
     border-radius: 50px;
     background: transparent;
-}
+} */
 .navbar-brand{
-    font-size: 60px;
+    font-size: 4rem;
     font-family: var(--font1);
     letter-spacing: 3px;
 }
 
-.navbar-links{
-    width: 40%;
-    display: flex;
+.nav{
+    flex: 1;
+    text-align: right;
+    
+}
+.nav li{
+    font-family: var(--font1);
+    font-size: 2rem;
+    list-style: none;
+    display: inline-flex;
     justify-content: space-between;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-top: -10px;
+
 }
 
-.navbar-link{
-    font-size: 35px;
-    display: flex;
-    justify-content: space-between;
-    font-family: var(--font1);
+/* .navbar-link li{
+    letter-spacing: 3px;
+   display: inline-block;
+   margin-right: 10px;
+
+} */
+
+.menu-icon{
+    width: 50px;
+    cursor: pointer;
+    display: none;
 }
 
 #entry{
@@ -67,18 +84,19 @@ a:hover{
     background-attachment: fixed;
     display: flex;
     align-items: center;
-    padding: 280px;
+    padding: 480px;
     text-align: center;
 }
 
 .img-above-name{
-    width: 20%;
-    border-radius: 50%;
+    position: relative;
+    width: 14rem;
+    border-radius: 10rem;
 }
 
 .entry-text{
     margin: 30px;
-    font-size: 70px;
+    font-size: 5rem;
     letter-spacing: 3px;
     font-family: var(--font1);
 }
@@ -86,14 +104,14 @@ a:hover{
 .entry-description{
     color: #fff;
     text-align: center;
-    font-size: 30px;
+    font-size: 2rem;
     font-family: var(--font2);
     margin-top: 25px;
     line-height: 50px;
 }
 
 .student{
-    font-size: 45px;
+    font-size: 4rem;
 }
 
 #about{
@@ -108,12 +126,12 @@ a:hover{
     justify-content: center;
     padding: 150px;
     text-align: center;
-    padding: 60px 120px 60px 120px;
-    height: 80vh;
+    padding: 480px;
+    height: 50vh;
 }
 
 .section-subtitle{
-    font-size: 70px;
+    font-size: 5rem;
     color: rgb(99, 136,173);
     font-family: var(--font1);
     margin-bottom: 5px;
@@ -125,27 +143,43 @@ a:hover{
 
 
 
-@media only screen and (max-width: 700px){
-    .img-above-name{
-        width: 80%;
+@media only screen and (max-width:1000px){
+    .nav{
+        width:100%;
+        background: linear-gradient(#ff54a2, #ff575a);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
     }
 
-    .entry-text{
-        font-size: 30px;
+    .nav li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    .nav li a{
+        color: rgb(255, 249, 249);
+    }
+    .menu-icon{
+        background-color: #222;
+        border-radius: 10rem;
+        display: block;
     }
 
-    .entry-description{
-        font-size: 20px;
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
     }
 
-    .student{
-        font-size: 45px;
-    }
     #about{
+        flex-direction: column-reverse;
         background-image: url("/img/about_background.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
+
 }

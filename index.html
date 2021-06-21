@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 
-    <title>portfolio</title>
+    <title>Amrit portfolio</title>
 </head>
 <body>
     <nav id="navbar">
@@ -22,15 +22,20 @@
           </a>
            
        
-          
+         
           <div class="navbar-links">
-            <a href="#entry" class="navbar-link">Home</a>
-            <a href="#about" class="navbar-link">About</a>
-            <a href="#blog" class="navbar-link">Blog</a>
-            <a href="#project" class="navbar-link">Project</a>
-            <a href="#contact" class="navbar-link">Contact</a>
+            <nav class="nav">
+
+              <ul id="menuList">
+                <li> <a href="#entry">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li> <a href="#project">Project</a></li>
+                <li> <a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+            <img src="/img/images.png" alt="" class="menu-icon" onclick="togglemenu()">
           </div>
-        
     </nav>
     
     <section id="entry">
@@ -57,7 +62,21 @@
       
     </section>
     
-    
+    <script>
+      var menuList = document.getElementById("menuList");
+
+      menuList.style.maxHeight = "0px";
+
+      function togglemenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+          menuList.style.maxHeight = "350px";
+        }
+        else{
+          menuList.style.maxHeight = "0px";
+        }
+      } 
+    </script>
    
       </body>
 </html>
