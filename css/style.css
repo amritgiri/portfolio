@@ -28,7 +28,7 @@ a:hover{
     justify-content: space-between; 
     height: 0;
     width: 100%;
-    padding: 40px 120px;
+    padding: 40px 30px;
     align-items: center;
     position: fixed;
     z-index: 3;
@@ -40,7 +40,7 @@ a:hover{
     background: transparent;
 } */
 .navbar-brand{
-    font-size: 75px;
+    font-size: 55px;
     font-family: var(--font1);
     letter-spacing: 3px;
 }
@@ -76,26 +76,26 @@ a:hover{
 }
 
 #entry{
-    color: #8f7a7a;
-    height: 150vh;
     background-color: #222;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 400px;
+    justify-content: center;
+    padding: 150px;
     text-align: center;
+    padding: 0px;
+    height: 150vh;
+    width: 100%;
 }
 
 .img-above-name{
     position: relative;
-    width: 250px;
+    width: 150px;
     border-radius: 100px;
 }
 
 .entry-text{
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,8 +126,9 @@ a:hover{
     justify-content: center;
     padding: 150px;
     text-align: center;
-    padding: 40px;
+    padding: 0px;
     height: 50vh;
+    width: 100%;
 }
 
 .section-subtitle{
