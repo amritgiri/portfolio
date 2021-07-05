@@ -183,10 +183,11 @@ a:hover{
     
     .nav{
         width:100%;
-        background: linear-gradient(#ff54a2, #ff575a);
+        background: rgb(192, 102, 102);
         position: absolute;
+        text-align: center;
         top: 75px;
-        right: 0;
+        right: 0px;
         z-index: 2;
     }
 
