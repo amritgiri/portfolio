@@ -10,4 +10,4 @@ var menuList = document.getElementById("menuList");
         else{
           menuList.style.maxHeight = "0px";
         }
-      } 
+      }
