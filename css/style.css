@@ -131,7 +131,7 @@ a:hover{
 }
 
 .section-header{
-    color: #222;
+    color: rgb(96, 105, 61);
 }
 #project{
     background-color: #222;
@@ -142,6 +142,84 @@ a:hover{
     padding: 0px;
     /* height: 70vh; */
     width: 100%;
+    overflow: hidden;
+}
+
+.project-info{
+    padding: 20px;
+}
+
+.project-title{
+    color:rgb(255, 255, 255);
+    font-size: 45px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-family: var(--font1);
+    text-align: center;
+}
+
+.project-description{
+    color: rgb(167, 136, 136);
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.project-lists{
+    margin: 30px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+}
+.list{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+#project1{
+    width: 100%;
+    padding: 0;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.project-subtitle1{
+    margin-top: 15%;
+    color: rgb(209, 203, 203);
+    font-size: 65px;
+}
+.project-description1{
+    color: rgb(230, 217, 217);
+    /* display: flex; */
+    font-size: 25px;
+}
+.project-description2{
+    height: 5vh;
+    white-space: normal;
+    font-size: 25px;
+    color: rgb(95, 100, 51);
+}
+.project-title1{
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+}
+.black{
+    background-color: rgb(73, 50, 50);
+    align-content: center;
+          
+}
+.lin{
+    font-size: 45px;
+    color: rgb(201, 179, 138);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
 }
 #contact{
     background-color: #fff;
@@ -242,6 +320,39 @@ a:hover{
     }
     .social{
         width: 6%;
+    }
+    #project1{
+        width: 100%;
+        padding: 0;
+        background-color: #222;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    .project-subtitle1{
+        margin-top: 25%;
+        color: rgb(209, 203, 203);
+        font-size: 65px;
+    }
+    .project-description1{
+        color: rgb(230, 217, 217);
+        /* display: flex; */
+        font-size: 25px;
+    }
+    .project-description2{
+        white-space: normal;
+        font-size: 25px;
+        color: rgb(95, 100, 51);
+    }
+    .lin{
+        font-size: 35px;
+        color: rgb(201, 179, 138);
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
     }
 }
 
