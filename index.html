@@ -27,8 +27,8 @@
                     </h1>
                     <p>
                         This website is under construction.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, libero?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis sed aut!
+                        <br>
+                        Electronics, Communication and Information Engineering student at IOE, Tribhuwan University  
                     </p>
                     <div class="btn-con">
                         <!-- <a href="" class="main-btn">
@@ -209,22 +209,22 @@
                             </div>
                         </div>
                         <div class="right-contact">
-                            <form action=”mailto:amritgiri5813@gmail.com” method=”POST” enctype=”multipart/form-data” name=”EmailForm” class="contact-form">
+                            <form action=”” class="contact-form">
                                 <div class="input-control i-c-2">
-                                    <input type="text" required placeholder="NAME">
+                                    <input type="text" required placeholder="NAME" id="name">
                                 </div>
                                 <div class="input-control i-c-2">    
-                                    <input type="email" required placeholder="EMAIL">
+                                    <input type="email" required placeholder="EMAIL" id="email">
                                 </div>
                                 <div class="input-control">
-                                    <input type="text" placeholder="ENTER Phone-Number">
+                                    <input type="text" placeholder="ENTER Phone-Number" id="number">
                                 </div>
                                 <div class="input-control">
-                                    <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                                    <textarea id="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
                                 </div>
                                 <div class="submit-btn">
-                                    <a href="#contact" class="main-btn">
-                                        <button class="btn-icon"><i class="fas font-awesome">submit</i></button>
+                                    <a href="#" class="main-btn">
+                                        <button id="btn"><i class="fas font-awesome">submit</i></button>
                                     </a>
                                 </div>
                             </form>
@@ -251,6 +251,9 @@
         <div class="theme-btn">
             <i class="fas fa-adjust"></i>
         </div>
+
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
         <script src="app.js"></script>
     </body>
     </html>
