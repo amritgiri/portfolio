@@ -13,27 +13,28 @@
 })();
 
 
-var btn = document.getElementById('btn');
+// var btn = document.getElementById('btn');
 
-btn.addEventListener('click',function(e){
-    e.preventDefault()
 
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var number = document.getElementById('number').value;
-    var message = document.getElementById('message').value;
+// btn.addEventListener('click',function(e){
+//     e.preventDefault()
 
-    var body = 'name: '+ name+'<br/> email: '+ email + '<br/> phone number: '+ number + '<br/> message: '+ message; 
+//     var name = document.getElementById('name').value;
+//     var email = document.getElementById('email').value;
+//     var number = document.getElementById('number').value;
+//     var messages = document.getElementById('message').value;
 
-    Email.send({
-        Host : "smtp.gmail.com",
-        Username : "amritgiri5813@gmail.com",
-        Password : "sivabbsrzxdgirra",
-        To : 'amritgiri5813@gmail.com',
-        From : email,
-        Subject : number,
-        Body : body
-    }).then(
-      message => alert(message)
-    );
-})
+//     var body = 'name: '+ name+'<br/> email: '+ email + '<br/> phone number: '+ number + '<br/> message: '+ messages; 
+
+//     Email.send({
+//         Host : "smtp.gmail.com",
+//         Username : "amritgiri5813@gmail.com",
+//         Password : "sivabbsrzxdgirra",
+//         To : 'amritgiri5813@gmail.com',
+//         From : "amritgiri713@gmail.com",
+//         Subject : "contact",
+//         Body : body
+//     }).then(
+//       message => alert("sent successfully")
+//     );
+// })
